@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MelodyMart | Register Interest</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Additional style for the Google Form iframe */
+    .google-form-container {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      border-radius: 28px;
+      background: #11131C;
+      padding: 1rem;
+      box-shadow: 0 20px 30px -10px black;
+    }
+    .google-form-container iframe {
+      width: 100%;
+      min-height: 800px;
+      border: none;
+      border-radius: 20px;
+    }
+    @media (max-width: 768px) {
+      .google-form-container iframe {
+        min-height: 900px;
+      }
+    }
+  </style>
+</head>
+<body>
+    <!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '172363682597537');
+  fbq('track', 'PageView');
+</script>
+<noscript>
+  <img height="1" width="1" style="display:none"
+       src="https://www.facebook.com/tr?id=172363682597537&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Meta Pixel Code -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <div class="logo"><i class="fas fa-music"></i> MelodyMart</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    </div>
+  </nav>
+
+  <section class="lead-section">
+    <div class="container">
+      <h2 class="section-title">📝 Register Your Interest</h2>
+      <p class="form-note" style="text-align: center; margin-bottom: 1.5rem;">
+        Please fill out the form below. We’ll get back to you with exclusive offers and updates.
+      </p>
+      <div class="google-form-container">
+        <!-- 
+          🔁 REPLACE the src URL with YOUR Google Form embed link.
+          How to get it: 
+          1. Open your Google Form.
+          2. Click "Send" → "Embed" tab.
+          3. Copy the entire <iframe> src="..." and paste it below.
+        -->
+        <iframe title="Google Form" src="https://docs.google.com/forms/d/e/1FAIpQLSczgNnSuDUyE1dwr7FlI7rTvNwrhMyN49JjaRX7D3xnfSAmHA/viewform?embedded=true" width="640" height="2759" >Loading…</iframe>
+        
+      </div>
+      <div class="analytics-note" style="text-align: center; margin-top: 2rem;">
+        <small>🔒 Your data is safe with Google Forms. For any issues, <a href="contact.html" style="color: #D4AF37;">contact us</a>.</small>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-col"><h4>MelodyMart</h4><p>Your sound, our passion.</p><div class="social-icons"><i class="fab fa-facebook-f"></i><i class="fab fa-instagram"></i><i class="fab fa-twitter"></i></div></div>
+      <div class="footer-col"><h4>Quick Links</h4><a href="products.html">Shop</a><a href="register.html">Register Interest</a><a href="contact.html">Contact</a></div>
+      <div class="footer-col"><h4>Legal</h4><a href="#">Privacy</a><a href="#">Terms</a></div>
+    </div>
+    <div class="footer-bottom">© 2026 MelodyMart — Feel the rhythm, live the music.</div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Optional: remove any reference to the old form's success message
+    // The global script.js will not find #leadForm, so no errors occur.
+    // If you want to track Google Form submissions in your analytics,
+    // you would need to set up a webhook or use Google Apps Script.
+    console.log("Google Form embedded. Lead tracking is now handled by Google Forms.");
+  </script>
+</body>
+</html>

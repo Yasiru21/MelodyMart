@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MelodyMart | Shop Instruments</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '172363682597537');
+  fbq('track', 'PageView');
+</script>
+<noscript>
+  <img height="1" width="1" style="display:none"
+       src="https://www.facebook.com/tr?id=172363682597537&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Meta Pixel Code -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <div class="logo"><i class="fas fa-music"></i> MelodyMart</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    </div>
+  </nav>
+
+  <section class="product-categories">
+    <div class="container">
+      <h2 class="section-title">Shop by Category</h2>
+      <div class="category-filters" id="categoryFilters">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="Guitar">🎸 Guitar</button>
+        <button class="filter-btn" data-category="Keyboard">🎹 Keyboard</button>
+        <button class="filter-btn" data-category="Drums">🥁 Drums</button>
+        <button class="filter-btn" data-category="Strings">🎻 Strings</button>
+        <button class="filter-btn" data-category="Microphone">🎤 Microphone</button>
+        <button class="filter-btn" data-category="Accessories">🎧 Accessories</button>
+      </div>
+      <div class="search-wrapper">
+        <input type="text" id="searchInput" placeholder="Search instruments by name or category..." class="search-input">
+        <i class="fas fa-search search-icon"></i>
+      </div>
+    </div>
+  </section>
+
+  <section class="products-section">
+    <div class="container">
+      <h2 class="section-title">🎵 Our Collection</h2>
+      <div class="products-grid" id="productsGrid"></div>
+    </div>
+  </section>
+
+  <section class="recommended">
+    <div class="container">
+      <h2 class="section-title">🤖 Recommended for You <span class="rec-badge">AI-curated</span></h2>
+      <div class="recommended-grid" id="recommendedGrid"></div>
+    </div>
+  </section>
+
+  <section class="dashboard">
+    <div class="container">
+      <h2 class="section-title">📊 Marketing Analytics Dashboard</h2>
+      <div class="dashboard-cards">
+        <div class="d-card"><i class="fas fa-eye"></i><span id="totalViews">0</span><p>Total Product Views</p></div>
+        <div class="d-card"><i class="fas fa-cart-plus"></i><span id="totalCartClicks">0</span><p>Cart Clicks</p></div>
+        <div class="d-card"><i class="fas fa-users"></i><span id="totalLeads">0</span><p>Form Submissions</p></div>
+        <div class="d-card"><i class="fas fa-chart-line"></i><span id="mostViewedCat">-</span><p>Most Viewed Category</p></div>
+        <div class="d-card"><i class="fas fa-campground"></i><span id="campaignSource">-</span><p>Campaign Source</p></div>
+        <div class="d-card"><i class="fas fa-chart-pie"></i><span id="conversionRate">0%</span><p>Conversion Rate</p></div>
+      </div>
+      <div class="leads-source">
+        <h4>Leads by Source</h4>
+        <div class="source-stats" id="sourceStats">Facebook:0 | Email:0 | WhatsApp:0 | Direct:0</div>
+      </div>
+      <div class="analytics-note"><small>*UTM tracking active | GA4/Meta Pixel events simulated</small></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-col"><h4>MelodyMart</h4><p>Your sound, our passion.</p><div class="social-icons"><i class="fab fa-facebook-f"></i><i class="fab fa-instagram"></i><i class="fab fa-twitter"></i></div></div>
+      <div class="footer-col"><h4>Quick Links</h4><a href="products.html">Shop</a><a href="register.html">Register Interest</a><a href="contact.html">Contact</a></div>
+      <div class="footer-col"><h4>Legal</h4><a href="#">Privacy</a><a href="#">Terms</a></div>
+    </div>
+    <div class="footer-bottom">© 2026 MelodyMart — Feel the rhythm, live the music.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
